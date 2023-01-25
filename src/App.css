@@ -1,11 +1,52 @@
 .App {
   text-align: center;
+
+}
+html {
+  background-color: darkslategray;
+  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.split {
+  height: 100%;
+  width: 50%;
+  position:absolute;
+
+  padding-top: 20px;
 }
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: darkslategray;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: darkslategrey;
+}
+
+input[type="checkbox"] {
+  display: flex;
+  flex-direction: column;
+}
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/* Style the image inside the centered container, if needed */
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
